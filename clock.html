@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mini Phone</title>
+        <meta name="description" content="Web Phone">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="phone">
+                <div class="screen">
+                    <div class="topBar">
+                        <div class="topBarRight">   
+                            <div class="time">
+                                <div class="clock">
+                                    <div class="hours"></div>:
+                                    <div class="minutes"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topBarLeft">
+                            <div class="wifi"><i class="fa-solid fa-wifi"></i></div>
+                            <div class="network"><i class="fa-solid fa-signal"></i></div>
+                            <div class="battery"><i class="fa-solid fa-battery-full"></i></div>
+                        </div>
+                    </div>
+                    <div class="clockApp appVisible">
+                        <div class="overlay"></div>
+                        <div class="clockContainer">
+                            <div class="clockIn">               
+                                <div class="hours"></div>:
+                                <div class="minutes"></div>:
+                                <div class="seconds"></div>
+                            </div>
+                            <div class="date"></div>
+                            <div class="timezone">
+                                <div class="country"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="openTabs">
+                        <div class="placement">
+                            <div class="tabsContent">
+                                    <div class="slider">
+                                        <div class="slide"><a href="clock.html"><img src="img/clock.png" alt="clock"></a></div>
+                                        <div class="slide"><a href="notes.html"><img src="img/note.png" alt="notes"></a></div>
+                                        <div class="slide"><a href="calculator.html"><img src="img/calculator.png" alt="calculator"></a></div>
+                                        <div class="slide"><a href="calendar.html"><img src="img/calendar.png" alt="calendar"></a></div>
+                                        <div class="slide"><a href="weather.html"><img src="img/weather.png" alt="weather"></a></div>
+                                    </div>                                   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottomBar">
+                        <div class="bottomBarContainer">
+                            <div class="openButton"><i class="fa-solid fa-bars bottom" ><button id="openTabs"></button></i></div>
+                            <div class="homeButton"><a href="index.html"><i class="fa-regular fa-square bottom"></i></a></div>
+                            <div class="returnButton"><a href="javascript:history.back()"><i class="fa-solid fa-left-long bottom"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <script src="time.js" async defer></script>
+        <script src="slider.js" async defer></script>
+    </body>
+</html>
